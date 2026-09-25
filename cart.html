@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stellar Hub - Cart / Order</title>
+</head>
+<body style="margin:0; font-family:Arial, sans-serif; background-color:#000000; color:#f0f0f0;">
+
+<!-- Header -->
+<div style="background:linear-gradient(90deg, #000000, #2a0d4a); padding:16px 24px; border-bottom:2px solid #b76eff;">
+  <span style="font-size:1.6rem; font-weight:bold; color:#b76eff;">Stellar Hub</span>
+  <span style="float:right;">
+    <a href="index.html" style="color:#f0f0f0; text-decoration:none; margin-left:18px;">Home</a>
+    <a href="build.html" style="color:#f0f0f0; text-decoration:none; margin-left:18px;">Build Your Own</a>
+    <a href="cart.html" style="color:#f0f0f0; text-decoration:none; margin-left:18px;">Cart / Order</a>
+  </span>
+</div>
+
+<div style="max-width:600px; margin:0 auto; padding:40px 20px;">
+  <h2 style="text-align:center; color:#b76eff;">Cart / Order</h2>
+  <p style="color:#cccccc; text-align:center;">Without JavaScript this page cannot keep a running cart or add up a total automatically.
+  Tick the PCs you want below and fill in your details. Pressing "Place Order" opens your email program with your order ready to send to us.</p>
+
+  <div style="background:linear-gradient(160deg,#1a1a1a,#000000); border:1px solid #b76eff; border-radius:10px; padding:24px; margin-top:20px;">
+
+    <form action="mailto:orders@stellarhub.example" method="post" enctype="text/plain">
+
+      <p style="color:#b76eff; font-weight:bold; font-size:1.05rem; margin-bottom:6px;">Gaming PCs</p>
+      <input type="checkbox" name="order" value="Nova (Rs. 74,999)"> Nova - Rs. 74,999<br>
+      <input type="checkbox" name="order" value="Pulsar (Rs. 1,24,999)"> Pulsar - Rs. 1,24,999<br>
+      <input type="checkbox" name="order" value="Quasar (Rs. 2,09,999)"> Quasar - Rs. 2,09,999
+
+      <p style="color:#b76eff; font-weight:bold; font-size:1.05rem; margin:20px 0 6px;">Office PCs</p>
+      <input type="checkbox" name="order" value="Desk Lite (Rs. 45,999)"> Desk Lite - Rs. 45,999<br>
+      <input type="checkbox" name="order" value="Desk Pro (Rs. 66,999)"> Desk Pro - Rs. 66,999<br>
+      <input type="checkbox" name="order" value="Studio Workstation (Rs. 1,12,999)"> Studio Workstation - Rs. 1,12,999
+
+      <p style="color:#b76eff; font-weight:bold; font-size:1.05rem; margin:20px 0 6px;">Custom Build</p>
+      <input type="checkbox" name="order" value="Custom build (see Build Your Own page for parts)">
+      I already sent a custom build from the Build Your Own page
+
+      <p style="color:#b76eff; font-weight:bold; font-size:1.05rem; margin:20px 0 6px;">Your Details</p>
+
+      <p><b>Full Name:</b><br>
+      <input type="text" name="name" style="width:100%; padding:8px; margin-top:4px; background:#000000; color:#f0f0f0; border:1px solid #b76eff; border-radius:4px;"></p>
+
+      <p><b>Email:</b><br>
+      <input type="email" name="email" style="width:100%; padding:8px; margin-top:4px; background:#000000; color:#f0f0f0; border:1px solid #b76eff; border-radius:4px;"></p>
+
+      <p><b>Shipping Address:</b><br>
+      <input type="text" name="address" style="width:100%; padding:8px; margin-top:4px; background:#000000; color:#f0f0f0; border:1px solid #b76eff; border-radius:4px;"></p>
+
+      <p><b>Payment Method:</b><br>
+      <input type="radio" name="payment" value="UPI"> UPI<br>
+      <input type="radio" name="payment" value="Card"> Credit / Debit Card<br>
+      <input type="radio" name="payment" value="Cash on Delivery"> Cash on Delivery</p>
+
+      <p style="text-align:center;">
+        <input type="submit" value="Place Order" style="background:linear-gradient(90deg,#b76eff,#e8cfff); color:#000000; border:none; padding:12px 24px; border-radius:6px; font-weight:bold; font-size:1rem;">
+      </p>
+      <p style="color:#999999; font-size:0.85rem; text-align:center;">This is a demo store. No real payment is taken. This is a static, JavaScript-free page, so "Place Order" opens your email program instead of a real checkout.</p>
+    </form>
+
+  </div>
+</div>
+
+<p style="text-align:center; color:#777777; font-size:0.85rem; padding:20px;">Stellar Hub | support@stellarhub.example | Made for gamers and office workers<br><a href="https://www.instagram.com/staller_hub_pcs?stkn=MW5pZXJmdG00OGRtMw==" target="_blank" rel="noopener noreferrer" style="color:#b76eff; text-decoration:none; font-weight:bold;">Follow us on Instagram</a></p>
+
+</body>
+</html>
